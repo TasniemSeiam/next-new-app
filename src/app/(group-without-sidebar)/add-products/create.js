@@ -41,6 +41,6 @@ export async function create(formData) {
   // }
 
   addProduct({ title, price, description, thumbnail, id });
-  revalidatePath("/home-mongoose");
-  redirect("/home-mongoose");
+  revalidatePath("/home");
+  redirect("/home");
 }
